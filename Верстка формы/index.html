@@ -5,61 +5,100 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" type="text/css" href="reset.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     </head>    
             <body>
                 <div class="body">
-                    
                     <div class="container">
+    
+                    <div class="image"></div>
+                   
+                   
 
-                        <img class="image" src="C:\Users\Krist-W\Documents\Мое портфолио\Верстка формы\mountains-2.jpg"/>
                         <div class="block">
+
+                            <h1 class="title">Регистрация</h1>
                             
                             <form action="https://www.bit-by-bit.ru/form-submit">
                         
-                        
+                                <div class="field">
+                                    <div class="form_name"><label for="firstname">Имя</label>
+                                    <div class="form2"><input class="form" type="text" id="firstname" name="firstName"/></div>
+                                    </div>
+                                
+                                    <div class="form_name"><label for="lastname">Фамилия</label>
+                                    <div class="form2"><input class="form" type="text" id="lastname" name="lastName"/></div>
+                                    </div>
+                                </div>
+                                
+                               
+                                <div class="field">
+                                    <div class="form_name"><label for="email">E-mail</label>
+                                    <div class="form2"><input class="form" type="text" id="email" name="email"/></div>
+                                    </div>
 
-                            <div class="field">
-                            <label for="firstname">Имя</label>
-                            <input type="text" id="firstname" name="firstName"/>
-                            <label for="lastname">Фамилия</label>
-                            <input type="text" id="lastname" name="lastName"/>
+                                    <div class="form_name"><label for="phone">Телефон</label>
+                                    <div class="form2"><input class="form" type="text" id="phone" name="phone"/></div>
+                                    </div>
+                                </div>
 
-                            </div>
-                            <div class="field">
-                                <p>Пол</p>
-                                <input type="radio" name="gender" id="male-option" value="male" />
-                                <label for="male-option">Мужской</label>
-                                <input type="radio" name="gender" id="female-option" value="female" />
-                                <label for="female-option">Женский</label>
-                            </div>
-                            <div class="field">
-                                <p>Уведомлять о скидках по</p>
-                        
-                                <input type="checkbox" id="sms-option" name="notifications" value="sms" />
-                        <label for="sms-option">По sms</label>
-                                <input type="checkbox" id="email-option" name="notifications" value="email" />
-                        <label for="email-option">По электронной почте</label>
-                        
+                                <hr class="line"> 
+
+                                <p class="title_form">Адрес доставки</p>
+
+                                <div class="field">
+                                    <div class="form_name"><label for="country">Страна</label>
+                                 <div class="form2"><select class="select" name="country">
+                                    <option value="Россия">Россия</option> 
+                                    <option value="Польша">Польша</option> 
+                                    <option value="Беларусь">Беларусь</option>
+                                    <option value="Казахстан">Казахстан</option>
+                                </select></div></div>
+
+
+                                <div class="form_name"><label for="city">Город</label>
+                                <div class="form2"><input class="form" type="text" id="city" name="city"/></div>
+                                </div>
+                                <div class="form_name"><label for="index">Почтовый индекс</label>
+                                <div class="form2"><input class="form" type="text" id="index" name="index"/></div>
+                                </div>
+                                </div>
+
+                            
+                                <div><label for="adress" class="form_name">Адрес доставки (улица, дом, квартира)</label></div>
+                                <div><input class="adress" type="text" id="adress" name="adress"/></div>
+
+                                <hr class="line">                  
+                           
+                                <p class="title_form">Уведомлять о акциях и скидках</p>
+                                <div class="sales">
+                                <p>Мы не будем отправлять спам, но напишем, когда поступят новые товары или будет большая распродажа.</p>
+
+                                <div class="sales_checkbox">
+                                    <input type="checkbox" id="email-option" name="notifications" value="email" />
+                                    <label for="email-option">По Email</label></div>
+                                <div class="sales_checkbox">
+                                    <input type="checkbox" id="sms-option" name="notifications" value="sms" />
+                                    <label for="sms-option">По SMS</label></div>
+                                <div class="sales_checkbox">
+                                    <input type="checkbox" id="push-option" name="notifications" value="push" />
+                                    <label for="push-option">Push-уведомления в приложении</label>
+                                </div>
+                       
                             </div>
 
-                            <div class="field">
-                                <label>Дата рождения</label>
-                                <input type="date" name="birthday" />
-                            </div>
-                            <div class="field">
-        <label for="password">Пароль</label>
-        <input type="password" name="password"/>
-        <!--  изменить тип поля здесь  -->
-                        
-
-                            <!-- ЗДЕСЬ БУДУТ ЭЛЕМЕНТЫ ФОРМЫ -->
-                            <button type="submit">Отправить</button>
+                            <hr class="line"> 
+                
+                            <button class="button" type="submit">Создать аккаунт</button>
                         
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
